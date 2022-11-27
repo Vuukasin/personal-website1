@@ -1,0 +1,1 @@
+web: portfolio 'name-of-application.wsgi'
