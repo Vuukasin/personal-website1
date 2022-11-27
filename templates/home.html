@@ -248,75 +248,73 @@
 
 
 {% block extra_scripts %}
-<script>
-    function carousel() {
-        let carouselSlider = document.querySelector(".slider-wrapper");
-        let list = document.querySelector(".slider-track");
-        let item = document.querySelector(".slide");
-        let list2;
+    <script>
+        function carousel() {
+            let carouselSlider = document.querySelector(".slider-wrapper");
+            let list = document.querySelector(".slider-track");
+            let item = document.querySelector(".slide");
+            let list2;
+            
+            const speed = .3
         
-        const speed = .3
-
-        const width = list.offsetWidth;
-        let x = 0;
-        let x2 = width
-
-        function clone() {
-            list2 = list.cloneNode(true);
-            carouselSlider.appendChild(list2);
-            list2.style.left = `${width}px`;
-        }
-
-
-        function moveFirst() {
-            x -= speed;
-
-            if (width >= Math.abs(x)) {
-                list.style.left = `${x}px`
-            } else {
-                x = width
+            const width = list.offsetWidth;
+            let x = 0;
+            let x2 = width
+        
+            function clone() {
+                list2 = list.cloneNode(true);
+                carouselSlider.appendChild(list2);
+                list2.style.left = `${width}px`;
             }
-        }
-
-        function moveSecond() {
-            x2 -= speed;
-
-            if (list2.offsetWidth >= Math.abs(x2)) {
-                list2.style.left = `${x2}px`
-            } else {
-                x2 = width;
+        
+        
+            function moveFirst() {
+                x -= speed;
+            
+                if (width >= Math.abs(x)) {
+                    list.style.left = `${x}px`
+                } else {
+                    x = width
+                }
             }
+        
+            function moveSecond() {
+                x2 -= speed;
+            
+                if (list2.offsetWidth >= Math.abs(x2)) {
+                    list2.style.left = `${x2}px`
+                } else {
+                    x2 = width;
+                }
+            }
+        
+            function hover() {
+                clearInterval(a);
+                clearInterval(b);
+            }
+        
+            function unhover() {
+                a = setInterval(moveFirst, 10)
+                b = setInterval(moveSecond, 10)
+            
+            }
+        
+            clone()
+        
+            let a = setInterval(moveFirst, 10)
+            let b = setInterval(moveSecond, 10)
+        
+        
+            list.addEventListener('mouseenter', hover);
+            list.addEventListener('mouseleave', unhover);
+            list2.addEventListener('mouseenter', hover);
+            list2.addEventListener('mouseleave', unhover);
+        
+        
         }
-
-        function hover() {
-            clearInterval(a);
-            clearInterval(b);
-        }
-
-        function unhover() {
-            a = setInterval(moveFirst, 10)
-            b = setInterval(moveSecond, 10)
-
-        }
-
-        clone()
-
-        let a = setInterval(moveFirst, 10)
-        let b = setInterval(moveSecond, 10)
-
-
-        list.addEventListener('mouseenter', hover);
-        list.addEventListener('mouseleave', unhover);
-        list2.addEventListener('mouseenter', hover);
-        list2.addEventListener('mouseleave', unhover);
-
-
-    }
-
     
-
-    carousel()
-</script>
+        carousel()
+    </script>
 {% endblock %}
 
 
