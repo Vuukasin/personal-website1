@@ -152,6 +152,16 @@
     }
 }
 
+.hi-section {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    animation: 1s ease-out 0s 1 slide-right-text;
+}
+
+
 
 .navbar {
 
@@ -837,11 +847,3 @@ main {
   }
 
 
-  .hi-section {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    animation: 1s ease-out 0s 1 slide-right-text;
-}
