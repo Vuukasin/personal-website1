@@ -32,6 +32,7 @@
     }
 }
 
+
 .tt-commons {
     font-family: 'TT Commons', sans-serif;
 }
@@ -123,8 +124,6 @@
     height: 1.5rem;
     width: 1.5rem;
 }
-
-
 
 .sidebar-icon:hover {
     transform: scale(1.3);
@@ -638,7 +637,7 @@ main {
 
 .scroll-to-top {
     position: fixed;
-    bottom: 48px;
+    bottom: 40px;
     right: 40px;
     height: 60px;
     width: 60px;
