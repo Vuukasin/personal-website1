@@ -532,6 +532,11 @@ main {
     .project-heading-container {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+
+    .project-heading {
+        text-align: center;
     }
 
     .project-image-container {

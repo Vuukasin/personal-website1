@@ -536,7 +536,7 @@ main {
     }
 
     .project-heading {
-        text-align: center;
+        align-items: center;
     }
 
     .project-image-container {
