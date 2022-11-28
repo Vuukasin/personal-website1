@@ -155,7 +155,7 @@
 }
 
 .hi-section {
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -310,7 +310,7 @@ main {
 .scroll-down {
     position: absolute;
     left: 24px;
-    bottom: 48px;
+    bottom: 0;
     display: flex;
     align-items: center;
     color: var(--dark-color);

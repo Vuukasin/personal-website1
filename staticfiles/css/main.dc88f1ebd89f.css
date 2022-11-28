@@ -310,7 +310,7 @@ main {
 .scroll-down {
     position: absolute;
     left: 24px;
-    bottom: 0;
+    bottom: 48px;
     display: flex;
     align-items: center;
     color: var(--dark-color);
