@@ -309,8 +309,8 @@ main {
 
 .scroll-down {
     position: absolute;
-    bottom: 0;
-    left: 12px;
+    left: 24px;
+    bottom: 48px;
     display: flex;
     align-items: center;
     color: var(--dark-color);
@@ -639,7 +639,7 @@ main {
 .scroll-to-top {
     position: fixed;
     bottom: 48px;
-    right: 48px;
+    right: 40px;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -680,8 +680,8 @@ main {
 
 
   .up-down-slide {
-	-webkit-animation: up-down-slide 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
-	        animation: up-down-slide 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+	-webkit-animation: up-down-slide .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+	        animation: up-down-slide .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
 }
 
 
@@ -691,8 +691,8 @@ main {
               transform: translateY(0);
     }
     100% {
-      -webkit-transform: translateY(-15px);
-              transform: translateY(-15px);
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
     }
   }
   @keyframes up-down-slide {
@@ -701,8 +701,8 @@ main {
               transform: translateY(0);
     }
     100% {
-      -webkit-transform: translateY(-15px);
-              transform: translateY(-15px);
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
     }
   }
 
